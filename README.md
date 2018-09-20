@@ -65,7 +65,7 @@ To design a pratical analytical system, one can choose storage mechanism Kafka c
 * Elastic Search / Cassendra
 * Streaming Services
 
-![Alt Image Text](/Users/somil/Desktop/Storage.png "Optional Title")
+![Alt Image Text](./images/Storage.png "Optional Title")
 
 #### Kafka Consumers
 
@@ -90,7 +90,7 @@ We propose a microservice framework to achieve the above capability. Each micros
 
 Microservices can be implemented as docker containers is shown below: 
  
-![Alt Image Text](/Users/somil/Desktop/Docker.png "Optional Title")
+![Alt Image Text](./images/Docker.png "Optional Title")
 
 ##### Kong
 Kong is API gateway acts as a middleware between API access and computation. Kong include authentication, security, traffic control, serverless, analytics & monitoring, request/response transformations and logging. 
@@ -104,7 +104,7 @@ Docker containers like mysql, complex ops usage will become clear when security 
 
 The following gives the combined ETL pipeline architecture.
 
-![Alt Image Text](/Users/somil/Desktop/ETL-pipeline.png "Optional Title")
+![Alt Image Text](./images/ETL-pipeline.png "Optional Title")
 
 ## Resilient and Fault-tolerant System
 Today distributed data storage frameworks come with redundancy and fault tolerance. Hadoop File System by default makes 3 copies of data within this system and Elastic Search can easily be clustered onto multiple machines. Scalability at storage-level can easily be handled.
@@ -155,7 +155,7 @@ What is interesting is how authorization plays a role at the analytical level wh
 
 Lets consider sales dataset of heavy machines as an example ( given below )
 
-![Alt Image Text](/Users/somil/Desktop/Dataset.png "Optional Title")
+![Alt Image Text](./images/Dataset.png "Optional Title")
 
 There may be a set of users e.g factory supervisors who may not have access to **Sales Price**,**SalesID** and **auctioneerID**  but rest of the columns to analyze what machines are their in inventory. 
 
@@ -169,7 +169,7 @@ In our design this can be facilitated by Kong API gateway once the analytics use
 
 This figure will give details on both authentication and authorization for external and internal entity.
 
-![Alt Image Text](/Users/somil/Desktop/Security.png "A Title")
+![Alt Image Text](./images/Security.png "A Title")
 
 ## Data Lineage and Monitoring
 
@@ -186,7 +186,7 @@ One can design a separate logging service which the rest of system can use to lo
 However, there is always an hassle to analyze huge amount of logs probing and finding errors. Fortunately, Logstash and kibana can come to rescue. Log stash can parse multiple logfile formats and can send them to downstream systems for further investigation. On the other hand Kibana which uses Elastic Search has backend system can help query and search for potential logs in the system. 
 
 This is how log service would look like
-![Alt Image Text](/Users/somil/Desktop/Logs.png "A Title")
+![Alt Image Text](./images/Logs.png "A Title")
 
 
 ## Data Versioning
@@ -196,6 +196,6 @@ Apparently Data Versioning is not a problem either in our design as we use Apach
 ## Putting All Together
 This is how the complete architecture would look like. 
 
-![Alt Image Text](/Users/somil/Desktop/Arch.png "A Title")
+![Alt Image Text](./images/Arch.png "A Title")
 
 However, this architecture is not complete in entirely. It misses out a big chunk on how analytics should be peformed on data. However, analytics can be visualized or how this design can be scaled on multi VMs. 
