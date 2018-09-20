@@ -198,4 +198,4 @@ This is how the complete architecture would look like.
 
 ![Alt Image Text](./images/Arch.png "A Title")
 
-However, this architecture is not complete in entirely. It misses out a big chunk on how analytics should be peformed on data. However, analytics can be visualized or how this design can be scaled on multi VMs. 
+However, this architecture is not complete in entirely. It misses out a big chunk on how analytics should be peformed on data. However, analytics can be visualized or how this design can be scaled on multi VMs.
