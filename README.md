@@ -48,7 +48,7 @@ Such ETL architecture should have following principles in mind:
 
 A simplified ETL architecture can use **Apache Kafka** as a streaming platform along with Data Producers and Consumer.
 
-![Alt Image Text](/Users/somil/Desktop/Kafka-Broker.png "Micro Services")
+![Alt Image Text](./images/Kafka-Broker.png "Micro Services")
 
 There are several advantages of using Apache Kafka as a broker are:
 
